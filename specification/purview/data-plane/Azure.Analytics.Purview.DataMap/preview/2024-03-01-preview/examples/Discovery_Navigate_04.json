@@ -4,10 +4,10 @@
       "NavigationRequest": {
         "navigationMode": "assetType",
         "itemPath": {
-          "path": "/azure_sql_server/exampleServer/databases",
+          "path": "/azure_sql_server/testsqlserver01/databases",
           "extendedProperties": {
-            "resourceGroup": "exampleResourceGroup",
-            "serverEndpoint": "exampleServer.database.windows.net",
+            "resourceGroup": "test-rg",
+            "serverEndpoint": "testsqlserver01.database.windows.net",
             "subscriptionId": "12345678-1234-5678-1234-86b7251e0353"
           }
         },
@@ -23,37 +23,37 @@
         "body": {
           "items": [
             {
-              "name": "exampleDatabase",
+              "name": "exampleDatabase01",
               "type": "azure_sql_db",
               "isLeafNode": false,
               "isEntity": true,
               "itemPath": {
-                "path": "exampleDatabase",
+                "path": "exampleDatabase01",
                 "extendedProperties": {
-                  "resourceGroup": "exampleResourceGroup",
-                  "serverEndpoint": "exampleServer.database.windows.net",
+                  "resourceGroup": "test-rg",
+                  "serverEndpoint": "testsqlserver01.database.windows.net",
                   "subscriptionId": "12345678-1234-5678-1234-86b7251e0353"
                 }
               },
               "properties": {
-                "resourceId": "/subscriptions/12345678-1234-5678-1234-86b7251e0353/resourceGroups/exampleResourceGroup/providers/Microsoft.Sql/servers/exampleServer/databases/exampleDatabase"
+                "resourceId": "/subscriptions/12345678-1234-5678-1234-86b7251e0353/resourceGroups/test-rg/providers/Microsoft.Sql/servers/testsqlserver01/databases/exampleDatabase01"
               }
             },
             {
-              "name": "exampleDatabase2",
+              "name": "exampleDatabase02",
               "type": "azure_sql_db",
               "isLeafNode": false,
               "isEntity": true,
               "itemPath": {
-                "path": "exampleDatabase2",
+                "path": "exampleDatabase02",
                 "extendedProperties": {
-                  "resourceGroup": "exampleResourceGroup",
-                  "serverEndpoint": "exampleServer.database.windows.net",
+                  "resourceGroup": "test-rg",
+                  "serverEndpoint": "testsqlserver01.database.windows.net",
                   "subscriptionId": "12345678-1234-5678-1234-86b7251e0353"
                 }
               },
               "properties": {
-                "resourceId": "/subscriptions/12345678-1234-5678-1234-86b7251e0353/resourceGroups/exampleResourceGroup/providers/Microsoft.Sql/servers/exampleServer/databases/exampleDatabase2"
+                "resourceId": "/subscriptions/12345678-1234-5678-1234-86b7251e0353/resourceGroups/test-rg/providers/Microsoft.Sql/servers/testsqlserver01/databases/exampleDatabase02"
               }
             }
           ]
