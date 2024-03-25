@@ -332,7 +332,7 @@ a StartTask element, then the Pool keeps the existing StartTask.
       @body
       pool: BatchPoolUpdateContent;
     },
-    RequestSuccesResponseHeaders
+    RequestSuccessResponseHeaders
   >;
 
   @summary("Disables automatic scaling for a Pool.")
@@ -345,7 +345,7 @@ a StartTask element, then the Pool keeps the existing StartTask.
       @path
       poolId: string;
     },
-    RequestSuccesResponseHeaders
+    RequestSuccessResponseHeaders
   >;
 
   @summary("Enables automatic scaling for a Pool.")
@@ -366,7 +366,7 @@ more than once every 30 seconds.
         @body
         content: BatchPoolEnableAutoScaleContent;
       },
-    RequestSuccesResponseHeaders
+    RequestSuccessResponseHeaders
   >;
 
   @summary("Gets the result of evaluating an automatic scaling formula on the Pool.")
@@ -387,7 +387,7 @@ scaling enabled in order to evaluate a formula.
       @body
       content: BatchPoolEvaluateAutoScaleContent;
     },
-    AutoScaleRun & RequestSuccesResponseHeaders
+    AutoScaleRun & RequestSuccessResponseHeaders
   >;
 
   @summary("Changes the number of Compute Nodes that are assigned to a Pool.")
@@ -447,7 +447,7 @@ with this request, then the Batch service will remove the existing StartTask.
       @body
       pool: BatchPoolReplaceContent;
     },
-    NoContentSuccesResponseHeaders
+    NoContentSuccessResponseHeaders
   >;
 
   @summary("Removes Compute Nodes from the specified Pool.")
@@ -572,7 +572,7 @@ element, then the Job keeps the existing constraints.
       @body
       job: BatchJobUpdateContent;
     },
-    RequestSuccesResponseHeaders
+    RequestSuccessResponseHeaders
   >;
 
   @summary("Updates the properties of the specified Job.")
@@ -593,7 +593,7 @@ with this request, then the Batch service will remove the existing constraints.
       @body
       job: BatchJob;
     },
-    RequestSuccesResponseHeaders
+    RequestSuccessResponseHeaders
   >;
 
   @summary("Disables the specified Job, preventing new Tasks from running.")
@@ -893,7 +893,7 @@ running Jobs are unaffected.
       @body
       jobSchedule: BatchJobScheduleUpdateContent;
     },
-    RequestSuccesResponseHeaders
+    RequestSuccessResponseHeaders
   >;
 
   @summary("Updates the properties of the specified Job Schedule.")
@@ -916,7 +916,7 @@ running Jobs are unaffected.
       @body
       jobSchedule: BatchJobSchedule;
     },
-    RequestSuccesResponseHeaders
+    RequestSuccessResponseHeaders
   >;
 
   @summary("Disables a Job Schedule.")
@@ -929,7 +929,7 @@ running Jobs are unaffected.
       @path
       jobScheduleId: string;
     },
-    NoContentSuccesResponseHeaders
+    NoContentSuccessResponseHeaders
   >;
 
   @summary("Enables a Job Schedule.")
@@ -942,7 +942,7 @@ running Jobs are unaffected.
       @path
       jobScheduleId: string;
     },
-    NoContentSuccesResponseHeaders
+    NoContentSuccessResponseHeaders
   >;
 
   @summary("Terminates a Job Schedule.")
@@ -1173,7 +1173,7 @@ information about subtasks.
       @body
       task: BatchTask;
     },
-    RequestSuccesResponseHeaders
+    RequestSuccessResponseHeaders
   >;
 
   #suppress "@azure-tools/typespec-azure-core/use-standard-names" "GET operations that return single objects should start with 'get'"
@@ -1420,7 +1420,7 @@ Account on a Compute Node only when it is in the idle or running state.
       @body
       content: BatchNodeUserUpdateContent;
     },
-    RequestSuccesResponseHeaders
+    RequestSuccessResponseHeaders
   >;
 
   @summary("Gets information about the specified Compute Node.")
@@ -1489,7 +1489,7 @@ scheduling state is enabled.
       @body
       parameters?: BatchNodeDisableSchedulingContent;
     },
-    RequestSuccesResponseHeaders
+    RequestSuccessResponseHeaders
   >;
 
   @summary("Enables Task scheduling on the specified Compute Node.")
@@ -1509,7 +1509,7 @@ state is disabled
       @path
       nodeId: string;
     },
-    RequestSuccesResponseHeaders
+    RequestSuccessResponseHeaders
   >;
 
   @summary("Gets the settings required for remote login to a Compute Node.")
@@ -1741,7 +1741,7 @@ alias AcceptedProcessingResponseHeaders = {
   ...DataServiceResponseHeaders;
 };
 
-alias NoContentSuccesResponseHeaders = {
+alias NoContentSuccessResponseHeaders = {
   @doc("A process exit code.")
   @statusCode
   code: "204";
@@ -1749,7 +1749,7 @@ alias NoContentSuccesResponseHeaders = {
   ...DataServiceResponseHeaders;
 };
 
-alias RequestSuccesResponseHeaders = {
+alias RequestSuccessResponseHeaders = {
   @doc("A process exit code.")
   @statusCode
   code: "200";
