@@ -45,7 +45,7 @@ What's the purpose of this PR? Check the specific option that applies. This is *
   - [ ] Update existing version for a new feature. (This is applicable only when you are revising a private preview API version.)
   - [ ] Update existing version to fix OpenAPI spec quality issues in S360.
   - [ ] Other, please clarify:
-    - _edit this with your clarification_
+    - just a description update
 
 ## Due diligence checklist
 
